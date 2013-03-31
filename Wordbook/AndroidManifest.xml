@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fc2.web.ncneller.wordbook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".gui.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gui.Activity1"
+            android:label="@string/title_activity_activity1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fc2.web.ncneller.wordbook.gui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".gui.Activity2"
+            android:label="@string/title_activity_activity2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fc2.web.ncneller.wordbook.gui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".gui.Activity3"
+            android:label="@string/title_activity_activity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fc2.web.ncneller.wordbook.gui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".gui.Activity4"
+            android:label="@string/title_activity_activity4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fc2.web.ncneller.wordbook.gui.MainActivity" />
+        </activity>
+        <service 
+            android:name=".gui.TimerService"></service>
+    </application>
+
+</manifest>

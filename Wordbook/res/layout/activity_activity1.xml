@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/word_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="103dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/act1_dir_ok"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/word_ind"
+        android:layout_toRightOf="@+id/word_ind"
+        android:text="@string/act1_dir_ok_string" />
+
+    <CheckedTextView
+        android:id="@+id/act1_selfol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/act1_selfol_string" />
+
+    <CheckedTextView
+        android:id="@+id/act1_dirinp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act1_dir_ok"
+        android:layout_alignParentLeft="true"
+        android:text="@string/act1_dirinp_str" />
+
+    <ScrollView
+        android:id="@+id/act1_entries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act1_dirinp"
+        android:layout_alignLeft="@+id/act1_selfol"
+        android:layout_alignRight="@+id/act1_dir_ok"
+        android:layout_below="@+id/act1_selfol"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/act1_linlay"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginBottom="34dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

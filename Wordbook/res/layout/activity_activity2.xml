@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckedTextView
+        android:id="@+id/act2_numbre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/act2_numbre_string" />
+
+    <TextView
+        android:id="@+id/act2_itself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/act2_numbre"
+        android:layout_marginLeft="55dp"
+        android:text="@string/act2_itself_string"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/act2_meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/act2_itself"
+        android:layout_below="@+id/act2_itself"
+        android:text="@string/act2_meaning_string" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act2_usage"
+        android:layout_alignLeft="@+id/act2_meaning"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act2_meaning" >
+
+        <TextView
+            android:id="@+id/act2_meaning_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/act2_meaning_txt_string"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/act2_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/act2_meaning"
+        android:layout_centerVertical="true"
+        android:text="@string/act2_usage_string" />
+
+    <Button
+        android:id="@+id/act2_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/act2_usage"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/act2_next_string" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act2_next"
+        android:layout_alignLeft="@+id/act2_usage"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act2_usage" >
+
+        <TextView
+            android:id="@+id/act2_usage_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/act2_usage_txt_string"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </ScrollView>
+
+</RelativeLayout>

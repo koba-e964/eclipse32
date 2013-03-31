@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="questions_easy">
+        <item>～を好む prefer infer transfer refer</item>
+        <item>～を用意する compare prepare sapre repair</item>
+        <item>～を禁止する proclaim exclaim prohibit inhibit</item>
+    </string-array>
+</resources>

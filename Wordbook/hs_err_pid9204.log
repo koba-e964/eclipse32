@@ -1,0 +1,108 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3494), pid=9204, tid=7484
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_33-b03
+# Java VM: Java HotSpot(TM) Client VM (20.8-b03 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x024aec00):  JavaThread "Unknown thread" [_thread_in_vm, id=7484, stack(0x00430000,0x00480000)]
+
+Stack: [0x00430000,0x00480000],  sp=0x0047f86c,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x13377a]
+V  [jvm.dll+0x12e6fb]
+V  [jvm.dll+0x164de]
+V  [jvm.dll+0x17d0f]
+V  [jvm.dll+0x26df5]
+V  [jvm.dll+0x27636]
+V  [jvm.dll+0x279e5]
+V  [jvm.dll+0x27a79]
+V  [jvm.dll+0x27b3c]
+V  [jvm.dll+0x27bba]
+V  [jvm.dll+0x27c9d]
+V  [jvm.dll+0x27f69]
+V  [jvm.dll+0x6c4c3]
+V  [jvm.dll+0x6c89c]
+V  [jvm.dll+0xf9cdc]
+V  [jvm.dll+0x11861b]
+V  [jvm.dll+0x9ebc0]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [kernel32.dll+0x1339a]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x39ef2]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x39ec5]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x024aec00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7484, stack(0x00430000,0x00480000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00425000 	C:\Program Files (x86)\Java\jre6\bin\javaw.exe
+0x771f0000 - 0x77370000 	C:\Windows\SysWOW64\ntdll.dll
+0x76090000 - 0x761a0000 	C:\Windows\syswow64\kernel32.dll
+0x76700000 - 0x76746000 	C:\Windows\syswow64\KERNELBASE.dll
+0x74930000 - 0x749d0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x761a0000 - 0x7624c000 	C:\Windows\syswow64\msvcrt.dll
+0x76070000 - 0x76089000 	C:\Windows\SysWOW64\sechost.dll
+0x75c80000 - 0x75d70000 	C:\Windows\syswow64\RPCRT4.dll
+0x748d0000 - 0x74930000 	C:\Windows\syswow64\SspiCli.dll
+0x748c0000 - 0x748cc000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x75960000 - 0x75a60000 	C:\Windows\syswow64\USER32.dll
+0x76270000 - 0x76300000 	C:\Windows\syswow64\GDI32.dll
+0x771c0000 - 0x771ca000 	C:\Windows\syswow64\LPK.dll
+0x758c0000 - 0x7595d000 	C:\Windows\syswow64\USP10.dll
+0x76390000 - 0x763f0000 	C:\Windows\system32\IMM32.DLL
+0x763f0000 - 0x764bc000 	C:\Windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\Java\jre6\bin\msvcr71.dll
+0x6d7f0000 - 0x6da9f000 	C:\Program Files (x86)\Java\jre6\bin\client\jvm.dll
+0x72cb0000 - 0x72ce2000 	C:\Windows\system32\WINMM.dll
+0x72cf0000 - 0x72d3c000 	C:\Windows\system32\apphelp.dll
+0x6d7a0000 - 0x6d7ac000 	C:\Program Files (x86)\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\Program Files (x86)\Java\jre6\bin\java.dll
+0x6d7e0000 - 0x6d7ef000 	C:\Program Files (x86)\Java\jre6\bin\zip.dll
+0x75d70000 - 0x75d75000 	C:\Windows\system32\PSAPI.DLL
+
+VM Arguments:
+jvm_args: -Dfile.encoding=MS932 -Xbootclasspath:C:\Program Files (x86)\Android\android-sdk\platforms\android-16\android.jar 
+java_command: com.fc2.web.ncneller.wordbook.CUIExec
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.6.0_12
+PATH=C:/Program Files (x86)/Java/jre6/bin/client;C:/Program Files (x86)/Java/jre6/bin;C:/Program Files (x86)/Java/jre6/lib/i386;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Symantec\VIP Access Client\;c:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;c:\Program Files (x86)\Roxio 2010\OEM\AudioCore\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\w32tex\bin;C:\gs\gs9.04\bin;C:\gs\gs9.04\lib;C:\Program Files (x86)\Groovy\Groovy-2.0.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin\;C:\MinGW\msys\1.0\bin;C:\Program Files (x86)\Java\jdk1.6.0_12\bin;C:\Users\2adc\Documents\Favorites\hack;c:\Python31;C:\Program Files (x86)\Android\android-sdk\tools;;C:\Program Files (x86)\eclipse32;
+USERNAME=2adc
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 4078812k(2111720k free), swap 8155772k(5498020k free)
+
+vm_info: Java HotSpot(TM) Client VM (20.8-b03) for windows-x86 JRE (1.6.0_33-b03), built on May  9 2012 09:39:57 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Thu Aug 09 20:49:25 2012
+elapsed time: 0 seconds
+

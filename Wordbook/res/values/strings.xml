@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">Wordbook</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Wordbook</string>
+    <string name="title_activity_activity1">Learning_SelectNumber</string>
+    <string name="act1_dirinp_str">or directly input the ID of word to start from.</string>
+    <string name="title_activity_activity2">Activity2</string>
+
+    <string-array name="words">
+        <item>success noun 成功 ps_pu_pk_ps_a_pe_ps I_have_given_up_all_hope_of_*.</item>
+        <item>advertise verb 宣伝する a_pae_pd_pv_pte_pvarr_pt_a2_pai_pz </item>
+        <item>investigate verb 調査する pi_pn_pv_a_pe_ps_pt_pte_pg_pei_pt</item>
+        <item>abandon verb 見捨てる/諦める pte_pb_a_pae_pn_pd_pte_pn I_had_to_*_all_my_money.</item>
+        <item>tolerate verb 耐える/我慢する pt_a_po_pl_pte_pr_pei_pt *</item>
+        <item>observe verb を観察する pte_pb_pz_a_pte_l_pvarr_pv </item>
+        <item>observe verb を守る</item>
+        <item>adopt verb を採用する pte_pd_a_po_pp_pt He_finally_got_the_boss_to_*_his_plan.</item>
+        <item>accomplish verb (仕事など)をやり遂げる  pte_pk_a_po_pm_pp_pl_pi_psh Despite_his_physical_handicap,_he_*ed_many_things_in_his_life. </item>
+        <item>fulfill verb (義務・約束)を果たす pf_pu_pl_pf_a_pi_pl SHe_*ed_her_dream_of_becoming_a_dancer.</item>
+        <item>attain verb (目標)を達成する pte_pt_a_pei_pn He_*ed</item>
+    </string-array>
+
+    <string name="act1_selfol_string">Select number from following buttons…</string>
+    <string name="act2_usage_not_available">Sorry,_but_the_usage_of_"*"_is_not_available.</string>
+    <string name="act1_dir_ok_string">OK</string>
+    <string name="act2_numbre_string">num</string>
+    <string name="act2_itself_string">itself</string>
+    <string name="act2_meaning_string">Meaning</string>
+    <string name="act2_meaning_txt_string">meaning_text</string>
+    <string name="act2_usage_string">Usage</string>
+    <string name="act2_next_string">next</string>
+    <string name="act2_usage_txt_string">usage_txt</string>
+    <string name="main_learning_string">学習</string>
+    <string name="main_test_string">テスト</string>
+    <string name="main_end_string">終了</string>
+    <string name="title_activity_activity3">Test</string>
+    <string name="act3_selectlv_string">Please select the level you would like to play.</string>
+    <string name="act3_easy_string">easy</string>
+    <string name="act3_normal_string">normal</string>
+    <string name="act3_hard_string">hard</string>
+    <string name="title_activity_activity4">Activity4</string>
+</resources>
