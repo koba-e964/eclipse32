@@ -27,6 +27,13 @@ public class RangeCoder {
 		int[] ary=freq.toIntArray();
 		assert ary.length==256;
 		content=new ArrayList<Byte>(initialCapacity);
+		tbl=new int[ary.length+1];
+		tbl[0]=0;
+		for(int i=0;i<ary.length;i++)
+		{
+			tbl[i+1]=tbl[i]+ary[i];
+		}
+		assert tbl[0x100]==0x10000;
 	}
 	public void encode(byte[] data)
 	{
@@ -41,18 +48,19 @@ public class RangeCoder {
 		r=end-st;
 		if(l>=(1L<<32))
 		{
-			content.set(content.size()-1, content.get(content.size()-1));
-			for(int i=0;i<ffcount;i++)
-			{
-				content.add((byte) 0);
-			}
-			ffcount=0;
+			carry();
 		}
 		if(r<0x1000000)
 		{
 			int c=(int) (l>>>24);
 			if(c!=0xff)
+			{
+				for(int i=0;i<ffcount;i++)
+				{
+					content.add((byte)0xff);
+				}
 				content.add((byte)c);
+			}
 			else
 				ffcount++;
 			l&=0xffffff;
@@ -60,9 +68,35 @@ public class RangeCoder {
 			r<<=8;
 		}
 	}
+	private void carry() {
+		content.set(content.size()-1, (byte) (content.get(content.size()-1)+1));
+		for(int i=0;i<ffcount;i++)
+		{
+			content.add((byte) 0);
+		}
+		ffcount=0;
+	}
 	public byte[] getContent()
 	{
-		return null;
+		if(l+r>=1L<<32)
+		{
+			carry();
+		}
+		else
+		{
+			if(l%0x1000000==0)
+			{
+				
+			}
+		}
+		byte[] out=new byte[content.size()];
+		int i=0;
+		for(byte b:content)
+		{
+			out[i]=b;
+			i++;
+		}
+		return out;
 	}
 	private long l=0,r=0x100000000L;
 	private int ffcount=0;
