@@ -1,5 +1,6 @@
 package snippet;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -27,12 +28,10 @@ public class Experiment {
 			return null;
 		return out;
 	}
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
-		dust2();
-		"".contentEquals("");
-		Double.compare(0,0);
-		new java.util.Scanner((Readable)null).hasNext((Pattern)null);
+		System.out.println(Math.sin(Math.toRadians(60)));
+		System.out.println("WWW");
 	}
 	public static void code()
 	{
@@ -99,5 +98,17 @@ public class Experiment {
 		int res1=6%res0;
 		int res2=x%res1;
 		System.out.println("x="+x+", res0="+res0+", res1="+res1+", res2="+res2);
+	}
+	class A
+	{
+		
+	}
+	public interface SubInterface
+	{
+		public int value=3;//static final
+	}
+	public void subInterfaceAccessor()
+	{
+		int a=SubInterface.value;
 	}
 }
