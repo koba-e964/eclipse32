@@ -2,6 +2,7 @@ package snippet;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -67,15 +68,15 @@ public class Experiment {
 		HashSet<Object> b;
 		new ArrayList<Integer>().toArray(new Integer[0]);
 	}
-	class Generic<Type>
+	class Generic<T>
 	{
 		@Override
 		public String toString()
 		{
-			Type[] a;
-			a=(Type[]) new Object[0];
+			T[] a;
+			a=(T[]) new Object[0];
 			
-			return super.toString();
+			return super.toString()+a.toString();
 		}
 	}
 	static void arrayCast()
@@ -110,5 +111,42 @@ public class Experiment {
 	public void subInterfaceAccessor()
 	{
 		int a=SubInterface.value;
+	}
+	static int test1(){
+		return-1;
+	}
+	static void anonymous(){
+		Cloneable ca=new Cloneable() {
+			int x;
+			//constructor
+			{
+				x=3;
+			}
+		};
+		ca.toString();
+		Arrays.sort((long[])null);
+	}
+	void call1(){
+		D0.v();
+		(new B0()).v();
+		(new D0()).v();
+		((B0)new D0()).v();
+		D0.v2();
+		new B0().v2();
+		new D0().v2();
+		((B0)new D0()).v2();
+	}
+	static class B0{
+		static void v(){
+			System.out.println("s");
+		}
+		static void  v2(){
+			
+		}
+	}
+	static class D0 extends B0{
+		static void v2(){
+			System.out.println("e3");
+		}
 	}
 }
